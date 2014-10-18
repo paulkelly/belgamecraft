@@ -8,6 +8,7 @@ public class Delivery : MonoBehaviour
 	private const float SPEED = 12f;
 	public Vector2 Velocity = Vector2.up;
 
+
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
@@ -25,5 +26,11 @@ public class Delivery : MonoBehaviour
 			yield return null;
 		}
 		Destroy (gameObject);
+	}
+
+	//called when delivery hits an enemy
+	void OnCollisionEnter2D(Collision2D coll)
+	{
+		Destroy (this.gameObject);
 	}
 }
