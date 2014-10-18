@@ -3,6 +3,7 @@ using System.Collections;
 
 public abstract class Enemy : MonoBehaviour
 {
+	public Vector2 Velocity;
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{

@@ -9,7 +9,8 @@ public class Asteroid : Enemy {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update ()
+	{
+		rigidbody2D.MovePosition(rigidbody2D.position + Velocity * Time.deltaTime);
 	}
 }
