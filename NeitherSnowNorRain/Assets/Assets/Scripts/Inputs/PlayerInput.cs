@@ -13,7 +13,7 @@ public class PlayerInput : MonoBehaviour
 
 	void Update()
 	{
-		if(Input.GetKeyDown(Inputs.RIGHTBUMPER))
+		if(Input.GetKeyDown(Inputs.RIGHTBUMPER) || Input.GetKeyDown(KeyCode.Space))
 		{
 			playerMover.Fire();
 		}

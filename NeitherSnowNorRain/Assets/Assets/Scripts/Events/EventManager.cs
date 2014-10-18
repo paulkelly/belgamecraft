@@ -31,6 +31,26 @@ public class EventManager : MonoBehaviour
 		PlayerDestinationEvent += new PlayerDestinationEventHandler(EmptyMethod);
 	}
 
+	public static void SendEnemeyCollisionEvent(Enemy enemy, Collision2D collision)
+	{
+		EnemyCollisionEvent.Invoke (enemy, collision);
+	}
+
+	public static void SendDeliveryDestinatioEvent(DeliveryDestination destination, Collision2D collision)
+	{
+		DeliveryDestinatioEvent.Invoke (destination, collision);
+	}
+
+	public static void SendDeliveryEnemyEvent(Collision2D collision)
+	{
+		DeliveryEnemyEvent.Invoke (collision);
+	}
+
+	public static void SendPlayerDestinationEvent()
+	{
+		PlayerDestinationEvent.Invoke ();
+	}
+
 	void EmptyMethod()
 	{
 	}

@@ -33,6 +33,6 @@ public class Player : MonoBehaviour
 
 	private void CollideWithEnemy(Enemy enemy, Collision2D collision)
 	{
-
+		Debug.Log ("Hit " + enemy.name);
 	}
 }
