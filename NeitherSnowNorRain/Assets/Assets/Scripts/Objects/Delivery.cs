@@ -27,10 +27,4 @@ public class Delivery : MonoBehaviour
 		}
 		Destroy (gameObject);
 	}
-
-	//called when delivery hits an enemy
-	void OnCollisionEnter2D(Collision2D coll)
-	{
-		Destroy (this.gameObject);
-	}
 }

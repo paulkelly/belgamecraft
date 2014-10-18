@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: c28c3470b627441abaf6db6b8aabe223
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: cog
+    100002: dog
+    100004: //RootNode
+    100006: head
+    100008: head_end
+    100010: helmet
+    100012: left_foot
+    100014: left_hand
+    100016: left_lowarm
+    100018: left_lowleg
+    100020: left_uparm
+    100022: left_upleg
+    100024: right_foot
+    100026: right_hand
+    100028: right_lowarm
+    100030: right_lowleg
+    100032: right_uparm
+    100034: right_upleg
+    100036: spine
+    400000: cog
+    400002: dog
+    400004: //RootNode
+    400006: head
+    400008: head_end
+    400010: helmet
+    400012: left_foot
+    400014: left_hand
+    400016: left_lowarm
+    400018: left_lowleg
+    400020: left_uparm
+    400022: left_upleg
+    400024: right_foot
+    400026: right_hand
+    400028: right_lowarm
+    400030: right_lowleg
+    400032: right_uparm
+    400034: right_upleg
+    400036: spine
+    4300000: helmet
+    4300002: dog
+    7400000: spacehop
+    7400002: dead1
+    9500000: //RootNode
+    13700000: dog
+    13700002: helmet
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: spacehop
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cog
+        weight: 1
+      - path: cog/spine
+        weight: 1
+      - path: cog/spine/head
+        weight: 1
+      - path: cog/spine/head/head_end
+        weight: 1
+      - path: cog/spine/left_uparm
+        weight: 1
+      - path: cog/spine/left_uparm/left_lowarm
+        weight: 1
+      - path: cog/spine/left_uparm/left_lowarm/left_hand
+        weight: 1
+      - path: cog/spine/left_upleg
+        weight: 1
+      - path: cog/spine/left_upleg/left_lowleg
+        weight: 1
+      - path: cog/spine/left_upleg/left_lowleg/left_foot
+        weight: 1
+      - path: cog/spine/right_uparm
+        weight: 1
+      - path: cog/spine/right_uparm/right_lowarm
+        weight: 1
+      - path: cog/spine/right_uparm/right_lowarm/right_hand
+        weight: 1
+      - path: cog/spine/right_upleg
+        weight: 1
+      - path: cog/spine/right_upleg/right_lowleg
+        weight: 1
+      - path: cog/spine/right_upleg/right_lowleg/right_foot
+        weight: 1
+      - path: dog
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: dead1
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cog
+        weight: 1
+      - path: cog/spine
+        weight: 1
+      - path: cog/spine/head
+        weight: 1
+      - path: cog/spine/head/head_end
+        weight: 1
+      - path: cog/spine/left_uparm
+        weight: 1
+      - path: cog/spine/left_uparm/left_lowarm
+        weight: 1
+      - path: cog/spine/left_uparm/left_lowarm/left_hand
+        weight: 1
+      - path: cog/spine/left_upleg
+        weight: 1
+      - path: cog/spine/left_upleg/left_lowleg
+        weight: 1
+      - path: cog/spine/left_upleg/left_lowleg/left_foot
+        weight: 1
+      - path: cog/spine/right_uparm
+        weight: 1
+      - path: cog/spine/right_uparm/right_lowarm
+        weight: 1
+      - path: cog/spine/right_uparm/right_lowarm/right_hand
+        weight: 1
+      - path: cog/spine/right_upleg
+        weight: 1
+      - path: cog/spine/right_upleg/right_lowleg
+        weight: 1
+      - path: cog/spine/right_upleg/right_lowleg/right_foot
+        weight: 1
+      - path: dog
+        weight: 1
+      - path: helmet
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

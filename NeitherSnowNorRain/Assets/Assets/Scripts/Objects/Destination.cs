@@ -11,6 +11,8 @@ public class Destination : MonoBehaviour {
 		
 		if(coll.gameObject.tag == "Delivery"){
 			EventManager.SendDeliveryDestinationEvent(this,coll);
+
+			Destroy (coll.gameObject);
 		}
 		
 		Destroy (this.gameObject);

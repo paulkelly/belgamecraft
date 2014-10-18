@@ -56,6 +56,7 @@
      <Compile Include="Assets\Assets\Scripts\Objects\Asteroid.cs" />
      <Compile Include="Assets\Assets\Scripts\Objects\Delivery.cs" />
      <Compile Include="Assets\Assets\Scripts\Objects\Destination.cs" />
+     <Compile Include="Assets\Assets\Scripts\Objects\Dog.cs" />
      <Compile Include="Assets\Assets\Scripts\Objects\Enemy.cs" />
      <Compile Include="Assets\Assets\Scripts\Objects\Player.cs" />
      <Compile Include="Assets\Assets\Scripts\Objects\PlayerScore.cs" />
