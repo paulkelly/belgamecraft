@@ -35,4 +35,5 @@ public class Player : MonoBehaviour
 	{
 		Debug.Log ("Hit " + enemy.name);
 	}
+	
 }

@@ -29,6 +29,15 @@ public class PlayerInput : MonoBehaviour
 			movement.Normalize();
 		}
 		playerMover.Move (movement);
-		playerMover.FireDirection (movement);
+
+		Vector2 aim = new Vector2();
+		aim.x = Input.GetAxis(Inputs.XRIGHTAXIS);
+		aim.y = Input.GetAxis(Inputs.YRIGHTAXIS);
+
+		if(aim.magnitude > 0)
+		{
+			aim.Normalize();
+			playerMover.FireDirection (aim);
+		}
 	}
 }
