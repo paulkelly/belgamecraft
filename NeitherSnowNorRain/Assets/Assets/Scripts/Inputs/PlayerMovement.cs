@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
 	private const float SPEED = 3f;
 	private const float X_MULTI = 2f;
-	private static Vector2 CONSTANT_VELOCITY = new Vector2(0f, 0f);//1.2f);
+	private static Vector2 CONSTANT_VELOCITY = new Vector2(0f, 1.2f);
 
 	private Vector2 Velocity = Vector2.zero;
 	private Vector2 AimDirection = Vector2.up;
@@ -34,8 +34,9 @@ public class PlayerMovement : MonoBehaviour
 		if(player.IsAlive)
 		{
 			value.x = value.x * X_MULTI;
-			Velocity = CONSTANT_VELOCITY + value;
-			rigidbody2D.MovePosition(rigidbody2D.position + Velocity * SPEED * Time.deltaTime);
+			Velocity = (CONSTANT_VELOCITY + value) * SPEED * Time.deltaTime;
+			player.Velocity = Velocity;
+			rigidbody2D.MovePosition(rigidbody2D.position + Velocity);
 
 			float rotation = (Mathf.Atan2(Velocity.y, Velocity.x) * 180 / Mathf.PI) - 90;
 			rigidbody2D.MoveRotation(rotation);

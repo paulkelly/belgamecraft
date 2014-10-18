@@ -4,7 +4,7 @@ using System.Collections;
 public class Delivery : MonoBehaviour
 {
 
-	private const float TIMER = 4f;
+	private const float TIMER = 20f;
 	private const float SPEED = 12f;
 	public Vector2 Velocity = Vector2.up;
 
@@ -20,9 +20,9 @@ public class Delivery : MonoBehaviour
 	private float time = 0;
 	IEnumerator Cleanup()
 	{
-		time += Time.deltaTime;
 		while(time < TIMER)
 		{
+			time += Time.deltaTime;
 			yield return null;
 		}
 		Destroy (gameObject);
