@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
 	private const float SPEED = 3f;
 	private const float X_MULTI = 2f;
-	private static Vector2 CONSTANT_VELOCITY = new Vector2(0f, 1.2f);
+	private static Vector2 CONSTANT_VELOCITY = new Vector2(0f, 0f);//1.2f);
 
 	private Vector2 Velocity = Vector2.zero;
 	private Vector2 AimDirection = Vector2.up;

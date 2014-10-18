@@ -51,10 +51,12 @@
      <Compile Include="Assets\Assets\Scripts\Inputs\Inputs.cs" />
      <Compile Include="Assets\Assets\Scripts\Inputs\PlayerInput.cs" />
      <Compile Include="Assets\Assets\Scripts\Inputs\PlayerMovement.cs" />
+     <Compile Include="Assets\Assets\Scripts\Objects\Asteroid.cs" />
      <Compile Include="Assets\Assets\Scripts\Objects\Delivery.cs" />
      <Compile Include="Assets\Assets\Scripts\Objects\DeliveryDestination.cs" />
      <Compile Include="Assets\Assets\Scripts\Objects\Enemy.cs" />
      <Compile Include="Assets\Assets\Scripts\Objects\Player.cs" />
+     <Compile Include="Assets\Assets\Scripts\SFXSingleton.cs" />
      <Compile Include="Assets\Assets\Scripts\Template.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

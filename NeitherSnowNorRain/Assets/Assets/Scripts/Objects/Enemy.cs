@@ -7,5 +7,7 @@ public abstract class Enemy : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D collision)
 	{
 		EventManager.SendEnemeyCollisionEvent (this, collision);
+	
+		Destroy (this.gameObject);
 	}
 }
