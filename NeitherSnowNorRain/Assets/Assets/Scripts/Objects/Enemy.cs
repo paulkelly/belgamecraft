@@ -6,7 +6,7 @@ public abstract class Enemy : MonoBehaviour
 	public Vector2 Velocity;
 	public bool isAlive = true;
 
-	void OnCollisionEnter2D(Collision2D collision)
+	void OnTriggerEnter2D(Collider2D collision)
 	{
 
 			if (collision.gameObject.tag == "Player")

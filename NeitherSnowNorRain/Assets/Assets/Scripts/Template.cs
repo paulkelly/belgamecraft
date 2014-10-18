@@ -18,7 +18,7 @@ public class Template : MonoBehaviour
 	}
 	
 	
-	private void HandleEvent(Enemy enemy, Collision2D collision)
+	private void HandleEvent(Enemy enemy, Collider2D collision)
 	{
 
 	}

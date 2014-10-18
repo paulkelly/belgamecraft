@@ -18,7 +18,7 @@ public class PlayerScore : MonoBehaviour {
 		EventManager.DeliveryDestinationEvent += DeliveryListener;
 	}
 
-	void Delivery(Destination destination, Collision2D collision)
+	void Delivery(Destination destination, Collider2D collision)
 	{
 		score += 1;
 	}

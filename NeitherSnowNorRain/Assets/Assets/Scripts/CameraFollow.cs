@@ -23,7 +23,7 @@ public class CameraFollow : MonoBehaviour
 		EventManager.EnemyCollisionEvent -= EnemyCollisionListener;
 	}
 
-	void CameraShake(Enemy enemy, Collision2D collider)
+	void CameraShake(Enemy enemy, Collider2D collider)
 	{
 		shakeAmount = 8;
 		StopAllCoroutines ();

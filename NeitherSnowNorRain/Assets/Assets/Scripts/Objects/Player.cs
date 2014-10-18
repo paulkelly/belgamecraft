@@ -35,12 +35,15 @@ public class Player : MonoBehaviour
 	}
 
 	private float torque = 0;
-	private void CollideWithEnemy(Enemy enemy, Collision2D collision)
+	private void CollideWithEnemy(Enemy enemy, Collider2D collision)
 	{
-		Debug.Log ("Hit " + enemy.name);
-		isAlive = false;
-		StartCoroutine (BlowUp (2.6f));
-		torque = Random.Range (-0.1f, 0.1f);
+		if(isAlive)
+		{
+			Debug.Log ("Hit " + enemy.name);
+			isAlive = false;
+			StartCoroutine (BlowUp (2.6f));
+			torque = Random.Range (-0.1f, 0.1f);
+		}
 	}
 
 	private float time = 0;
@@ -60,6 +63,13 @@ public class Player : MonoBehaviour
 		{
 			system.Play();
 		}
+		time = 0;
+		while(time < TIMER)
+		{
+			time += Time.deltaTime;
+			yield return null;
+		}
+		Application.LoadLevel (1);
 	}
 	
 }

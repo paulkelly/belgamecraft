@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public delegate void EnemyCollisionEventHandler(Enemy enemy, Collision2D collision);
-public delegate void DeliveryDestinationEventHandler(Destination destination, Collision2D collision);
-public delegate void DeliveryEnemyEventHandler(Collision2D collision);
+public delegate void EnemyCollisionEventHandler(Enemy enemy, Collider2D collision);
+public delegate void DeliveryDestinationEventHandler(Destination destination, Collider2D collision);
+public delegate void DeliveryEnemyEventHandler(Collider2D collision);
 public delegate void PlayerDestinationEventHandler();
 
 public class EventManager : MonoBehaviour
@@ -31,17 +31,17 @@ public class EventManager : MonoBehaviour
 		PlayerDestinationEvent += new PlayerDestinationEventHandler(EmptyMethod);
 	}
 
-	public static void SendEnemeyCollisionEvent(Enemy enemy, Collision2D collision)
+	public static void SendEnemeyCollisionEvent(Enemy enemy, Collider2D collision)
 	{
 		EnemyCollisionEvent.Invoke (enemy, collision);
 	}
 
-	public static void SendDeliveryDestinationEvent(Destination destination, Collision2D collision)
+	public static void SendDeliveryDestinationEvent(Destination destination, Collider2D collision)
 	{
 		DeliveryDestinationEvent.Invoke (destination, collision);
 	}
 
-	public static void SendDeliveryEnemyEvent(Collision2D collision)
+	public static void SendDeliveryEnemyEvent(Collider2D collision)
 	{
 		DeliveryEnemyEvent.Invoke (collision);
 	}
@@ -55,15 +55,15 @@ public class EventManager : MonoBehaviour
 	{
 	}
 
-	void EnemyCollisionEventMethod(Enemy enemy, Collision2D collision)
+	void EnemyCollisionEventMethod(Enemy enemy, Collider2D collision)
 	{
 	}
 
-	void DeliveryDestinationEventMethod(Destination destination, Collision2D collision)
+	void DeliveryDestinationEventMethod(Destination destination, Collider2D collision)
 	{
 	}
 
-	void PlayerDestinationEventMethod(Collision2D collision)
+	void PlayerDestinationEventMethod(Collider2D collision)
 	{
 	}
 }

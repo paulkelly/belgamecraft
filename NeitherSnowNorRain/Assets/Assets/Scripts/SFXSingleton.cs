@@ -77,7 +77,7 @@ public class SFXSingleton : MonoBehaviour
 	// EVENT LISTENING
 	///////////////////////////////////////////////////////////////////////////
 
-	private void PlayerEnemyCollide(Enemy enemy, Collision2D collision)
+	private void PlayerEnemyCollide(Enemy enemy, Collider2D collision)
 	{
 		Debug.Log ("S0und " + enemy.name);
 		deathSrc.Play ();
