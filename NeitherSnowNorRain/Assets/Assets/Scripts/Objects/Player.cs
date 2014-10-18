@@ -3,6 +3,20 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
+	private bool isAlive = true;
+	public bool IsAlive
+	{
+		get
+		{
+			return isAlive;
+		}
+
+		set
+		{
+			isAlive = value;
+		}
+	}
+
 	private EnemyCollisionEventHandler EnemyCollisionListener;
 	// Use this for initialization
 	void Start ()
