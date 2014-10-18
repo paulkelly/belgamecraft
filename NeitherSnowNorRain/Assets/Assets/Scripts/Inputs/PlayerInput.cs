@@ -24,6 +24,11 @@ public class PlayerInput : MonoBehaviour
 		Vector2 movement = new Vector2();
 		movement.x = Input.GetAxis(Inputs.XAXIS);
 		movement.y = Input.GetAxis(Inputs.YAXIS);
+		if(movement.magnitude > 1)
+		{
+			movement.Normalize();
+		}
 		playerMover.Move (movement);
+		playerMover.FireDirection (movement);
 	}
 }
