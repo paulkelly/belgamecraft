@@ -2,14 +2,14 @@
 using System.Collections;
 
 public delegate void EnemyCollisionEventHandler(Enemy enemy, Collision2D collision);
-public delegate void DeliveryDestinationEventHandler(DeliveryDestination destination, Collision2D collision);
+public delegate void DeliveryDestinationEventHandler(Destination destination, Collision2D collision);
 public delegate void DeliveryEnemyEventHandler(Collision2D collision);
 public delegate void PlayerDestinationEventHandler();
 
 public class EventManager : MonoBehaviour
 {
 	public static event EnemyCollisionEventHandler EnemyCollisionEvent;
-	public static event DeliveryDestinationEventHandler DeliveryDestinatioEvent;
+	public static event DeliveryDestinationEventHandler DeliveryDestinationEvent;
 	public static event DeliveryEnemyEventHandler DeliveryEnemyEvent;
 	public static event PlayerDestinationEventHandler PlayerDestinationEvent;
 
@@ -26,7 +26,7 @@ public class EventManager : MonoBehaviour
 	{
 		_instance = this;
 		EnemyCollisionEvent += new EnemyCollisionEventHandler(EnemyCollisionEventMethod);
-		DeliveryDestinatioEvent += new DeliveryDestinationEventHandler(DeliveryDestinationEventMethod);
+		DeliveryDestinationEvent += new DeliveryDestinationEventHandler(DeliveryDestinationEventMethod);
 		DeliveryEnemyEvent += new DeliveryEnemyEventHandler(PlayerDestinationEventMethod);
 		PlayerDestinationEvent += new PlayerDestinationEventHandler(EmptyMethod);
 	}
@@ -36,9 +36,9 @@ public class EventManager : MonoBehaviour
 		EnemyCollisionEvent.Invoke (enemy, collision);
 	}
 
-	public static void SendDeliveryDestinatioEvent(DeliveryDestination destination, Collision2D collision)
+	public static void SendDeliveryDestinationEvent(Destination destination, Collision2D collision)
 	{
-		DeliveryDestinatioEvent.Invoke (destination, collision);
+		DeliveryDestinationEvent.Invoke (destination, collision);
 	}
 
 	public static void SendDeliveryEnemyEvent(Collision2D collision)
@@ -59,7 +59,7 @@ public class EventManager : MonoBehaviour
 	{
 	}
 
-	void DeliveryDestinationEventMethod(DeliveryDestination destination, Collision2D collision)
+	void DeliveryDestinationEventMethod(Destination destination, Collision2D collision)
 	{
 	}
 
